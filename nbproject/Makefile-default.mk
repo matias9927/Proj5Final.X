@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Proj5Final.c mic.c led.c adc.c lcd.c srv.c ssd.c utils.c pmods.c btn.c
+SOURCEFILES_QUOTED_IF_SPACED=Proj5Final.c mic.c led.c adc.c lcd.c srv.c ssd.c utils.c pmods.c btn.c tone.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Proj5Final.o ${OBJECTDIR}/mic.o ${OBJECTDIR}/led.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/srv.o ${OBJECTDIR}/ssd.o ${OBJECTDIR}/utils.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/btn.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Proj5Final.o.d ${OBJECTDIR}/mic.o.d ${OBJECTDIR}/led.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/srv.o.d ${OBJECTDIR}/ssd.o.d ${OBJECTDIR}/utils.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/btn.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Proj5Final.o ${OBJECTDIR}/mic.o ${OBJECTDIR}/led.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/srv.o ${OBJECTDIR}/ssd.o ${OBJECTDIR}/utils.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/tone.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Proj5Final.o.d ${OBJECTDIR}/mic.o.d ${OBJECTDIR}/led.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/srv.o.d ${OBJECTDIR}/ssd.o.d ${OBJECTDIR}/utils.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/btn.o.d ${OBJECTDIR}/tone.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Proj5Final.o ${OBJECTDIR}/mic.o ${OBJECTDIR}/led.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/srv.o ${OBJECTDIR}/ssd.o ${OBJECTDIR}/utils.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/btn.o
+OBJECTFILES=${OBJECTDIR}/Proj5Final.o ${OBJECTDIR}/mic.o ${OBJECTDIR}/led.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/srv.o ${OBJECTDIR}/ssd.o ${OBJECTDIR}/utils.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/tone.o
 
 # Source Files
-SOURCEFILES=Proj5Final.c mic.c led.c adc.c lcd.c srv.c ssd.c utils.c pmods.c btn.c
+SOURCEFILES=Proj5Final.c mic.c led.c adc.c lcd.c srv.c ssd.c utils.c pmods.c btn.c tone.c
 
 
 CFLAGS=
@@ -166,6 +166,12 @@ ${OBJECTDIR}/btn.o: btn.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/btn.o 
 	@${FIXDEPS} "${OBJECTDIR}/btn.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/btn.o.d" -o ${OBJECTDIR}/btn.o btn.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
+${OBJECTDIR}/tone.o: tone.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/tone.o.d 
+	@${RM} ${OBJECTDIR}/tone.o 
+	@${FIXDEPS} "${OBJECTDIR}/tone.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/tone.o.d" -o ${OBJECTDIR}/tone.o tone.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
 else
 ${OBJECTDIR}/Proj5Final.o: Proj5Final.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -226,6 +232,12 @@ ${OBJECTDIR}/btn.o: btn.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/btn.o.d 
 	@${RM} ${OBJECTDIR}/btn.o 
 	@${FIXDEPS} "${OBJECTDIR}/btn.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/btn.o.d" -o ${OBJECTDIR}/btn.o btn.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/tone.o: tone.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/tone.o.d 
+	@${RM} ${OBJECTDIR}/tone.o 
+	@${FIXDEPS} "${OBJECTDIR}/tone.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/tone.o.d" -o ${OBJECTDIR}/tone.o tone.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 endif
 

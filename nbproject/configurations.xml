@@ -14,6 +14,7 @@
       <itemPath>config.h</itemPath>
       <itemPath>pmods.h</itemPath>
       <itemPath>btn.h</itemPath>
+      <itemPath>tone.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -32,6 +33,7 @@
       <itemPath>utils.c</itemPath>
       <itemPath>pmods.c</itemPath>
       <itemPath>btn.c</itemPath>
+      <itemPath>tone.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
